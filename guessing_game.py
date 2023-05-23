@@ -11,7 +11,7 @@ def get_user_guess():
             print('Invalid input. Please enter a valid number.')
 
 def play_game():
-    secret_number = random.randint(1, 100)
+    secret_number = random.randint(1, 10)
     attempts = 0
 
     while attempts < MAX_ATTEMPTS:
@@ -43,7 +43,7 @@ def play_again():
 
 def main():
     print('Welcome to the Number Guessing Game!')
-    print('I will pick a secret number between 1 and 100.')
+    print('I will pick a secret number between 1 and 10.')
     print('You have', MAX_ATTEMPTS, 'attempts to guess the number.')
     print('Let\'s begin!')
 
